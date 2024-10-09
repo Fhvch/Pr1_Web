@@ -52,17 +52,6 @@ section{
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-footer{
-    background-color: #333;
-    color: aliceblue;
-    text-align: center;
-    padding: 10px;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
-}
-
 /* Практическая работа */
 section.practical {
     padding: 20px;
@@ -83,12 +72,35 @@ section.laboratory {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
+footer {
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
 footer a {
-    color: #ffeb3b; /* Выберите цвет, который вам нравится */
-    text-decoration: none; /* Убирает подчеркивание */
+    color: #ffeb3b;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #f44336; /* Цвет при наведении */
+    color: #f44336;
 }
+
+footer p {
+    margin: 0; /* Убираем отступы для корректного отображения */
+}
+
+* {
+    box-sizing: border-box; /* Учитываем отступы и границы в ширину */
+    margin: 0; /* Сбрасываем внешние отступы для всех элементов */
+    padding: 0; /* Сбрасываем внутренние отступы для всех элементов */
+}
+
